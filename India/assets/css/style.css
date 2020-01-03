@@ -1,0 +1,156 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dfdfdf;
+  padding-top: 30px;
+  height: 80vh;
+}
+
+.photo {
+  width: 350px;
+  position: absolute;
+  background-image: url("../img/Rebecq.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-transition: background-size 0.5s;
+  transition: background-size 0.5s;
+}
+
+.photo:hover .content {
+  height: 260px;
+  margin-top: 250px;
+}
+
+.photo:hover {
+  -webkit-box-shadow: 10px 10px 5px lightgray;
+          box-shadow: 10px 10px 5px lightgray;
+  background-size: 120%;
+}
+
+.photo:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+.content {
+  background-color: white;
+  margin-top: 350px;
+  padding: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 160px;
+  z-index: 6;
+}
+
+.content h2 {
+  color: #342f36;
+  text-transform: uppercase;
+  font-weight: normal;
+  position: absolute;
+  z-index: 6;
+}
+
+.content h3 {
+  color: #e94d34;
+  font-weight: normal;
+  z-index: 6;
+  position: absolute;
+  margin-top: 60px;
+}
+
+.content ul {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  color: #9a9a9c;
+  z-index: 6;
+}
+
+.content li {
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 6;
+}
+
+.content p {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  padding-left: 0;
+  position: absolute;
+  bottom: 40px;
+  color: gray;
+  opacity: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  z-index: 6;
+}
+
+.date * {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+.date span {
+  text-align: center;
+  padding-top: 8px;
+  width: 50px;
+  height: 42px;
+  background-color: #e64d3b;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.9em;
+}
+
+.titre {
+  display: block;
+  padding: 5px;
+  background-color: #e64d3b;
+  width: 100px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  position: absolute;
+  margin-top: -48px;
+  margin-left: -20px;
+  z-index: 6;
+}
+
+.overlay {
+  opacity: 0;
+  width: inherit;
+  height: 500px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 1;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+/*# sourceMappingURL=style.css.map */
